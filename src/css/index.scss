@@ -1,9 +1,115 @@
 @import './style.css';
 
 body {
+	color: #FFF;
 	background-color: green;
+	font-family: Lato, sans-serif;
 
 	h1 {
 		color: white;
+	}
+
+	.heading {
+		margin: 1.5rem auto;
+		text-align: center;
+	}
+
+	.tool-button {
+		$size: 5rem;
+		background-color: #3B3241;
+		border: none;
+		border-radius: 50%;
+		display: flex;
+		justify-content: center;
+		height: $size;
+		width: $size;
+		&:active {
+			outline: none;
+			background-color: #4B3F52;
+		}
+		&:focus {
+			box-shadow: 0 0 0 0.125rem #4b3f52;
+			outline: solid transparent;
+			background-color: #4B3F52;
+		}
+	}
+
+	.tool-list {
+		align-items: center;
+		display: flex;
+		height: 10rem;
+		justify-content: center;
+		ul {
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+		}
+
+		li {
+			display: inline-flex;
+			margin: 0 0.5rem;
+		}
+	}
+
+	.result {
+		align-items: center;
+		display: flex;
+		height: 5rem;
+		justify-content: center;
+
+		span {
+			font-size: 1.5rem;
+			font-weight: bold;
+			margin-bottom: 2.5rem;
+		}
+	}
+
+	.score {
+		align-items: center;
+		display: flex;
+		height: 5rem;
+		margin: auto;
+		max-width: 30rem;
+
+		.score-column {
+			text-align: center;
+			width: 50%;
+		}
+	}
+
+	.reset-button {
+		display: flex;
+		margin: 0 auto;
+	}
+
+	.play-button {
+		$size: 5rem;
+		background-color: #3B3241;
+		border: none;
+		border-radius: 50%;
+		color: #fff;
+		display: flex;
+		justify-content: center;
+		height: $size;
+		margin: 2rem auto;
+		width: $size;
+	}
+
+	.modes {
+		align-items: center;
+		display: flex;
+		flex-direction: column;
+		margin: auto;
+		max-width: 30rem;
+
+		.mode-button {
+			display: flex;
+			margin: 1rem auto;
+		}
+
+		.mode-label {
+			display: flex;
+			margin: 1rem auto;
+		}
 	}
 }

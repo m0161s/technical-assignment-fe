@@ -1,8 +1,8 @@
 import "core-js/stable";
 import "regenerator-runtime/runtime";
+import "../css/index.scss";
 
-import logger from './logger';
+import { Game } from './components/game';
 
-import '../css/index.scss';
 
-logger('it works well!');
+Game().loadGame();
